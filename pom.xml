@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.javiercanillas</groupId>
+    <artifactId>cassandra-driver-configurer</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <description>Cassandra driver configurer base on TypeSafe configuration file</description>
+
+    <developers>
+        <developer>
+            <name>Javier Canillas</name>
+            <email>javier.canillas@gmail.com</email>
+            <id>javiercanillas</id>
+            <roles>
+                <role>author</role>
+            </roles>
+            <url>https://github.com/javiercanillas</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:javiercanillas/cassandra-driver-configurer.git</connection>
+        <developerConnection>scm:git:git@github.com:javiercanillas/cassandra-driver-configurer.git</developerConnection>
+        <url>scm:git:git@github.com:javiercanillas/cassandra-driver-configurer.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.typesafe</groupId>
+            <artifactId>config</artifactId>
+            <version>[1.0.0,]</version>
+        </dependency>
+        <dependency>
+            <groupId>com.datastax.cassandra</groupId>
+            <artifactId>cassandra-driver-core</artifactId>
+            <version>[2.0.0,]</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>[1.7.0,]</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.0.11</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+
+</project>
